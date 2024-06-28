@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolzap</title>
+    <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
+    <script src="https://kit.fontawesome.com/401ea8d0bd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Creo div che fungerà da sfondo -->
+    <div id="container">
+
+        <div class="header">
+
+        </div>
+
+        <!-- Creo div collegamento per inserire javascript -->
+        <div id="app">
+
+            <!-- Creo colonna piccola per chat utenti -->
+            <div class="colPiccola">
+                
+                <!-- Utente chat  -->
+                <div class="profile">
+                    <!-- img profilo -->
+                    <div class="containerimg"></div>
+
+                    <!-- icon font  -->
+                    <div class="iconfontawesome">
+                        <i class="fa-solid fa-circle-notch"></i>
+                        <i class="fa-solid fa-message"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+                <!-- avviso attiva notifiche  -->
+                <div id="notifiche">
+                     <!-- icon campanella  -->
+                    <div class="iconfontawesomeBackground">
+                         <i class="fa-solid fa-bell-slash"></i>
+                    </div>
+                   
+
+                </div>
+                <!-- Barra di ricerca  -->
+                <div id="ricerca">
+
+                </div>
+                <!-- Lista contatti Chat aperte -->
+                <div id="chatAperte">
+
+                </div>
+
+            </div>   
+            <!-- Creo Chat -->
+            <div class="chat">
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

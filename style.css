@@ -1,0 +1,113 @@
+
+/* REGOLE GENERALE  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container img {
+    width: 100%;
+}
+
+.containerimg{
+    width: 14%;
+    height: 33px;
+    /* debug */
+    background-color: palevioletred;
+}
+.header{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(55, 210, 12);
+}
+
+/* STRUTTURA DELLA WEB APP */
+
+#app{
+    width: 80%;    
+    height: 90vh;
+    background-color: wheat;
+    display: flex;
+}
+
+/* STRUTTURE RIPETURE IN VARIE PARTI */
+
+.profile{
+    width: 100%;
+    min-height: calc(100% / 15);
+    background-color: rgb(186, 184, 184);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* COLONNA PICCOLA UTENTE E CHAT APERTE  */
+
+.colPiccola{
+    width: 40%;
+    height: 100%;
+    /* DEBUG */
+    background-color: white;
+    border: 2px solid black;
+}
+
+.profile .iconfontawesome{
+    color: whitesmoke;
+    margin: 5px;
+}
+
+.iconfontawesome i{
+   margin-right: 5px;
+   font-size: 14px;
+}
+
+#notifiche{
+    width: 100%;
+    min-height: calc(100% / 10);
+    background-color: lightskyblue;
+}
+
+.iconfontawesomeBackground{
+	color: white;
+	padding-top: 16px;
+	padding-left: 10px;
+    background-color: brown;
+    width: 28px;
+    height: 28px;
+}
+
+#ricerca{
+    width: 100%;
+    min-height: calc(100% / 15);
+}
+
+#chatAperte{
+    width: 100%;
+    min-height: calc(100% / 10);
+    background-color: yellow;
+}
+/* GESTIONE DELLA CHAT */
+
+.chat{
+    width: 60%;
+    height: 100%;
+    /* DEBUG */
+    background-color: aqua;
+    border: 2px solid black;
+}
+
+
+
+
