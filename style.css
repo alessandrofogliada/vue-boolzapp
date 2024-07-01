@@ -37,7 +37,7 @@
 
 #app{
     width: 80%;    
-    height: 90vh;
+    height: 85vh;
     background-color: wheat;
     display: flex;
 }
@@ -47,7 +47,7 @@
 .profile{
     width: 100%;
     min-height: calc(100% / 15);
-    background-color: rgb(186, 184, 184);
+    background-color:#eaeaea;
     display: flex;
     justify-content: space-between;
 }
@@ -64,7 +64,7 @@
 }
 
 .profile .iconfontawesome{
-    color: whitesmoke;
+    color: #b1b1b1;
     margin: 5px;
 }
 
@@ -73,31 +73,77 @@
    font-size: 14px;
 }
 
-#notifiche{
-    width: 100%;
-    min-height: calc(100% / 10);
-    background-color: lightskyblue;
+#notifiche {
+	width: 100%;
+	min-height: calc(100% / 10);
+	background-color: #8edafc;
+	display: flex;
+	align-items: center;
 }
 
-.iconfontawesomeBackground{
-	color: white;
-	padding-top: 16px;
-	padding-left: 10px;
-    background-color: brown;
-    width: 28px;
-    height: 28px;
+.iconfontawesomeBackground {
+	color: #8edafc;
+	background-color: white;
+	width: 32px;
+	height: 32px;
+	margin-left: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 25px;
+}
+
+.textnotifiche{
+    margin-left: 6px;
+}
+
+.textnotifiche span{
+    font-size: 10px;
+    color: grey;
+    text-decoration: underline;
 }
 
 #ricerca{
     width: 100%;
     min-height: calc(100% / 15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
 }
 
-#chatAperte{
-    width: 100%;
-    min-height: calc(100% / 10);
-    background-color: yellow;
+.barradiricerca {
+	width: 83%;
+	border: 1px solid grey;
 }
+
+#ricerca button {
+	width: 14%;
+	border-radius: 0px;
+	background: white;
+	border: 1px solid grey;
+    color: grey;
+}
+
+.containerchataperte{
+    height: 76%;
+    overflow-y: scroll;
+}
+
+#chatAperte {
+	width: 100%;
+	min-height: calc(100% / 6);
+	display: flex;
+	align-items: center;
+    /* DEBUG */
+	background-color: yellow;
+	border: 1px solid black;
+}
+
+.textchataperte{
+    margin-left: 10px;
+}
+
 /* GESTIONE DELLA CHAT */
 
 .chat{
