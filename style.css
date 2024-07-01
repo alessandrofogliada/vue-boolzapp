@@ -10,7 +10,7 @@
 #container{
     width: 100%;
     height: 100vh;;
-    background-color: burlywood;
+    background-color: #dadbd3;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,18 +19,20 @@
 
 #container img {
     width: 100%;
+    border-radius: 25px;
 }
 
 .containerimg{
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
+    margin: 3px;
     /* debug */
-    background-color: palevioletred;
+    /* background-color: palevioletred; */
 }
 .header{
     width: 100%;
     height: 10vh;
-    background-color: rgb(55, 210, 12);
+    background-color:#009688;
 }
 
 /* STRUTTURA DELLA WEB APP */
