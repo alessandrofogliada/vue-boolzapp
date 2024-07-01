@@ -22,8 +22,8 @@
 }
 
 .containerimg{
-    width: 14%;
-    height: 33px;
+    width: 40px;
+    height: 40px;
     /* debug */
     background-color: palevioletred;
 }
@@ -63,15 +63,24 @@
     border: 2px solid black;
 }
 
-.profile .iconfontawesome{
-    color: #b1b1b1;
-    margin: 5px;
-}
+/* PROIFLO UTENTE */
 
+.profile .iconfontawesome {
+	color: #b1b1b1;
+	margin-top: 12px;
+	margin-right: 4px;
+}
 .iconfontawesome i{
    margin-right: 5px;
    font-size: 14px;
 }
+
+.profile span {
+	margin-right: 110px;
+	margin-top: 13px;
+}
+
+/* NOTIFICHE */
 
 #notifiche {
 	width: 100%;
@@ -103,6 +112,8 @@
     text-decoration: underline;
 }
 
+/* RICERCA */
+
 #ricerca{
     width: 100%;
     min-height: calc(100% / 15);
@@ -124,6 +135,8 @@
 	border: 1px solid grey;
     color: grey;
 }
+
+/* CHAT APERTE  */
 
 .containerchataperte{
     height: 76%;
@@ -149,10 +162,69 @@
 .chat{
     width: 60%;
     height: 100%;
-    /* DEBUG */
-    background-color: aqua;
+    background-image: url(img/backgroundimage.jpg);
     border: 2px solid black;
 }
+
+.infoUtenteVisualizzato{
+    min-height:calc(100% / 13);
+    background-color:#eaeaea ;
+    display: flex;
+    align-items: center;
+}
+
+.colonnaMessaggiUscita{
+    margin-left: 250px;
+    margin-top: 25px;
+}
+
+.colonnaMessaggiEntrata{
+    margin-left: 40px;
+    margin-top: 25px;
+}
+
+.messaggioIn{
+    width: 150px;
+    min-height: 35px;
+    border-radius: 7px;
+    display: flex;
+    align-items:center;
+}
+
+.Entrata{
+    background-color: white;
+}
+
+.Uscita{
+    background-color:#d5f9ba;
+}
+
+.messaggioIn span{
+    margin-left: 5px;
+    font-size: 13px;
+}
+
+/* INSERIMENTO MESSAGGIO */
+
+.inserimentomessaggio {
+	background-color: #f3eeea;
+	height: 7%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 241px;
+}
+
+.inserimentomessaggio i{
+    color: grey;
+}
+
+.fa-microphone{
+    padding-right: 9px;
+}
+
+
+
 
 
 
