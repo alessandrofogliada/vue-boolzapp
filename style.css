@@ -1,4 +1,3 @@
-
 /* REGOLE GENERALE  */
 
 *{
@@ -7,17 +6,7 @@
     box-sizing: border-box;
 }
 
-#container{
-    width: 100%;
-    height: 100vh;;
-    background-color: #dadbd3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#container img {
+#app img {
     width: 100%;
     border-radius: 25px;
 }
@@ -29,18 +18,23 @@
     /* debug */
     /* background-color: palevioletred; */
 }
+
 .header{
     width: 100%;
     height: 10vh;
     background-color:#009688;
 }
 
+.main{
+    width: 100%;
+    height: 90vh;
+}
+
 /* STRUTTURA DELLA WEB APP */
 
 #app{
-    width: 80%;    
-    height: 85vh;
-    background-color: wheat;
+    width: 100%;    
+    height: 100vh;
     display: flex;
 }
 
@@ -68,9 +62,9 @@
 /* PROIFLO UTENTE */
 
 .profile .iconfontawesome {
-	color: #b1b1b1;
-	margin-top: 12px;
-	margin-right: 4px;
+    color: #b1b1b1;
+    margin-top: 12px;
+    margin-right: 4px;
 }
 .iconfontawesome i{
    margin-right: 5px;
@@ -78,30 +72,30 @@
 }
 
 .profile span {
-	margin-right: 110px;
+	margin-right: 210px;
 	margin-top: 13px;
 }
 
 /* NOTIFICHE */
 
 #notifiche {
-	width: 100%;
-	min-height: calc(100% / 10);
-	background-color: #8edafc;
-	display: flex;
-	align-items: center;
+    width: 100%;
+    min-height: calc(100% / 10);
+    background-color: #8edafc;
+    display: flex;
+    align-items: center;
 }
 
 .iconfontawesomeBackground {
-	color: #8edafc;
-	background-color: white;
-	width: 32px;
-	height: 32px;
-	margin-left: 15px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 25px;
+    color: #8edafc;
+    background-color: white;
+    width: 32px;
+    height: 32px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
 }
 
 .textnotifiche{
@@ -126,15 +120,15 @@
 }
 
 .barradiricerca {
-	width: 83%;
-	border: 1px solid grey;
+    width: 83%;
+    border: 1px solid grey;
 }
 
 #ricerca button {
-	width: 14%;
-	border-radius: 0px;
-	background: white;
-	border: 1px solid grey;
+    width: 14%;
+    border-radius: 0px;
+    background: white;
+    border: 1px solid grey;
     color: grey;
 }
 
@@ -146,17 +140,31 @@
 }
 
 #chatAperte {
-	width: 100%;
-	min-height: calc(100% / 6);
-	display: flex;
-	align-items: center;
+    width: 100%;
+    min-height: calc(100% / 6);
+    display: flex;
+    align-items: center;
     /* DEBUG */
-	background-color: yellow;
-	border: 1px solid black;
+    background-color: yellow;
+    border: 1px solid black;
 }
 
 .textchataperte{
     margin-left: 10px;
+}
+
+.ultimomessaggio {
+    height: 69px;
+	width: 34%;
+    /* debug  */
+	/* background-color: green; */
+}
+
+.ultimomessaggioattivo{
+    height: 40px;
+    width: 56%;
+    /* debug */
+    /* background-color: blue */
 }
 
 /* GESTIONE DELLA CHAT */
@@ -166,10 +174,13 @@
     height: 100%;
     background-image: url(img/backgroundimage.jpg);
     border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .infoUtenteVisualizzato{
-    min-height:calc(100% / 13);
+    min-height: 10vh;
     background-color:#eaeaea ;
     display: flex;
     align-items: center;
@@ -209,12 +220,12 @@
 /* INSERIMENTO MESSAGGIO */
 
 .inserimentomessaggio {
-	background-color: #f3eeea;
-	height: 7%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	margin-top: 241px;
+    background-color: #f3eeea;
+    height: 7vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 241px;
 }
 
 .inserimentomessaggio i{
@@ -224,8 +235,6 @@
 .fa-microphone{
     padding-right: 9px;
 }
-
-
 
 
 
