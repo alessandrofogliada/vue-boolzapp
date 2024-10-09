@@ -170,6 +170,8 @@ createApp({
             cercaContatto: "",
             contattoAttivo:0,
             ricercaContatto:"",
+            nuovoMessaggio:"",
+
             
         }
     },
@@ -193,12 +195,47 @@ createApp({
         //     return datiMessaggi.toFormat ("HH:mm:ss");
         // }
 
+        // creo funzione per aggiungere un messaggio scritto dall'utente 
+
+        aggiungiMessaggio(){
+            if (this.nuovoMessaggio !== '' && this.nuovoMessaggio.lenght >= 5){
+                this.contact[this.contattoAttivo].messages.push({date: DateTime.now() .toFormat('dd/MM/yyyy HH:mm:ss'), message: this.nuovoMessaggio, status: 'sent', scorrimentoFinestra: false});
+                setTimeout(() => {this.messagioUtente()}, 1000)
+            }
+        },
+
+        // creo un messaggio di risosta del computer per l'utente 
+
+        messaggioPc(){
+            this.contact[this.contattoAttivo].messages.push({date: DateTime.now().toFormat('dd/MM/yyyy HH:mm:ss'),
+                message: 'Ok!' , status: 'received'
+            });
+        },    
+
+        contactSearch(){
+
+                // Prendo tutti i nomi dell'array
+                let arrayMap = this.contacts.map(({ name }) => ({ name }));
+                console.log("array di nomi " , arrayMap);
+                
+                // Variabile con il nome da cercare
+                const cercaContatto = this.cercaContatto; 
+
+                console.log("valore di cercaContatto" , cercaContatto);
+                
+                // Li filtro con le lettere che ha selezionato l'utente
+                const arrayFiltrato = arrayMap.filter(({ name }) => name.includes(cercaContatto));
+                
+                // Mostro in pagina l'array filtrato
+
+                console.log(arrayFiltrato);
+
+        }        
     },
 
     mounted() {
-        
     },
 }).mount('#app')
 
-console.log('ciao sei dd');
+
 

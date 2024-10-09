@@ -124,9 +124,12 @@
     border: 1px solid grey;
 }
 
-#ricerca button {
+
+#ricerca a {
     width: 14%;
     border-radius: 0px;
+    display: flex;
+    justify-content: center;
     background: white;
     border: 1px solid grey;
     color: grey;

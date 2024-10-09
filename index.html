@@ -51,11 +51,11 @@
                 </div>
                 <!-- Barra di ricerca  -->
                 <div id="ricerca">
-                    <button>
+                    <a href="#" @click="contactSearch()">
                         <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
+                    </a>
 
-                    <input v.model="cercaContatto" type="text" placeholder="  Cerca o inizia una nuova chat" class="barradiricerca">
+                    <input v-model="cercaContatto" type="text" placeholder=" Cerca o inizia una nuova chat" class="barradiricerca">
 
                 </div>
                 <!-- Lista contatti Chat aperte -->
@@ -110,7 +110,7 @@
 
                 <!-- Inserimento messaggio -->
 
-                <div class="inserimentomessaggio">
+                <div class="inserimentomessaggio" @keyup.enter="aggiungiMessaggio">
                     <i class="fa-regular fa-face-smile"></i>
                     <input type="text" placeholder="  Scrivi un messaggio" class="barradiricerca">
                     <i class="fa-solid fa-microphone"></i>
