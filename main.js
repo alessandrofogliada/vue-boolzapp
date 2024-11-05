@@ -192,27 +192,27 @@ createApp({
             this.contattoAttivo = index;            
         },
 
-        // infoTempo(infoMessaggi){
-        //     const datiMessaggi = DataOra.fromFormat(infoMessaggi, "dd/MM/yyyy HH:mm:ss");
-        //     return datiMessaggi.toFormat ("HH:mm:ss");
-        // }
 
         // creo funzione per aggiungere un messaggio scritto dall'utente 
 
-        aggiungiMessaggio(){
-            if (this.nuovoMessaggio !== '' && this.nuovoMessaggio.lenght >= 5){
-                this.contact[this.contattoAttivo].messages.push({date: DateTime.now() .toFormat('dd/MM/yyyy HH:mm:ss'), message: this.nuovoMessaggio, status: 'sent', scorrimentoFinestra: false});
-                setTimeout(() => {this.messagioUtente()}, 1000)
-            }
-        },
+        newMessage(){
+            if (this.nuovoMessaggio.trim() !== '') {
+                this.contacts[0].messages.push({
+                  date: new Date().toLocaleString(),
+                  message: this.nuovoMessaggio,
+                  status: 'sent'
+                });
+                this.nuovoMessaggio = '';
+        }
+        }, 
 
         // creo un messaggio di risosta del computer per l'utente 
 
-        messaggioPc(){
-            this.contact[this.contattoAttivo].messages.push({date: DateTime.now().toFormat('dd/MM/yyyy HH:mm:ss'),
-                message: 'Ok!' , status: 'received'
-            });
-        },    
+        // messaggioPc(){
+        //     this.contact[this.contattoAttivo].messages.push({date: DateTime.now().toFormat('dd/MM/yyyy HH:mm:ss'),
+        //         message: 'Ok!' , status: 'received'
+        //     });
+        // },    
 
         contactSearch(){
 

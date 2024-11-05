@@ -104,9 +104,9 @@
 
                 <!-- Inserimento messaggio -->
 
-                <div class="inserimentomessaggio" @keyup.enter="aggiungiMessaggio">
+                <div class="inserimentomessaggio" @keyup.enter="newMessage()">
                     <i class="fa-regular fa-face-smile"></i>
-                    <input type="text" placeholder="  Scrivi un messaggio" class="barradiricerca">
+                    <input v-model="nuovoMessaggio" type="text" placeholder="  Scrivi un messaggio" class="barradiricerca">
                     <i class="fa-solid fa-microphone"></i>
                 </div>
  
