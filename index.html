@@ -51,7 +51,7 @@
                 </div>
                 <!-- Barra di ricerca  -->
                 <div id="ricerca">
-                    <a href="#" @click="contactSearch()">
+                    <a href="#" @click="filtroContatti()">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
 
@@ -94,16 +94,10 @@
 
             <div class="main">
                 <!-- Nuvolette chat  -->
-                <div class="colonnaMessaggiEntrata">
-                    <div class="messaggioIn Entrata">
-                        <span>messaggio</span>
-                        <span></span>
-                    </div>
-                </div>
 
-                <div class="colonnaMessaggiUscita">
-                    <div class="messaggioIn Uscita">
-                        <span>Messaggio</span>
+                <div v-for="msg in contacts[contattoAttivo].messages" :class="msg.status === 'sent' ? 'colonnaMessaggiUscita':'colonnaMessaggiEntrata'">
+                    <div :class="msg.status === 'sent' ? 'messaggioIn Uscita': 'messaggioIn Entrata'">
+                        <span>{{msg.message}}</span>
                     </div>
                 </div>
             </div>

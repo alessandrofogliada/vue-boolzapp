@@ -176,18 +176,20 @@ createApp({
         }
     },
     computed: {
-        // faccio filtrare i nomi digitati dall'utente e vedo se corrispondono a quelli presenti nella chat 
-        filtroContatti(){
+      
+         // faccio filtrare i nomi digitati dall'utente e vedo se corrispondono a quelli presenti nella chat 
+         filtroContatti(){
             return this.contacts.filter( contact =>
                 contact.name.toLowerCase().includes(this.ricercaContatto.toLowerCase())
             );
-        }
+        },
     },
 
     methods: {
+
         // creo funzione per selezionare i contatti tramite un click 
         selezionaContatto(index) {
-            this.contattoAttivo = index;
+            this.contattoAttivo = index;            
         },
 
         // infoTempo(infoMessaggi){
@@ -221,16 +223,18 @@ createApp({
                 // Variabile con il nome da cercare
                 const cercaContatto = this.cercaContatto; 
 
-                console.log("valore di cercaContatto" , cercaContatto);
+                // console.log("valore di cercaContatto" , cercaContatto);
                 
                 // Li filtro con le lettere che ha selezionato l'utente
-                const arrayFiltrato = arrayMap.filter(({ name }) => name.includes(cercaContatto));
+                let arrayFiltrato = arrayMap.filter(({ name }) => name.includes(cercaContatto));
+
+                // console.log(cercaContatto);
                 
-                // Mostro in pagina l'array filtrato
-
-                console.log(arrayFiltrato);
-
-        }        
+                
+                // assegno una classe a tutti i contatti segnati e non nell'array filtrato 
+                // console.log(arrayFiltrato);
+                 
+            }        
     },
 
     mounted() {
